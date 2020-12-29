@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+make[1]: Entering directory '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work/filter_std/solution1/csim/build'
+   Compiling ../../../../../design/filter/tb_std.cpp in debug mode
+csim.mk:75: recipe for target 'obj/tb_std.o' failed
+make[1]: Leaving directory '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work/filter_std/solution1/csim/build'
+In file included from /tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h:495:0,
+                 from /tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib:41,
+                 from /home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include/hls.h:31,
+                 from ../../../../../design/filter/tb_std.cpp:18:
+/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39:22: fatal error: features.h: No such file or directory
+ #include <features.h>
+                      ^
+compilation terminated.
+make[1]: *** [obj/tb_std.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

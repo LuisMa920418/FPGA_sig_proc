@@ -15,6 +15,7 @@
 // =====================================================================================
 
 #include "filter_std.h"
+#include "c_filter.hpp"
 
 using namespace sp_filter_std;
 
@@ -30,30 +31,23 @@ void filter_std(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
 	// Doc (internet) : Vivado HLS User Guide (UG902)
 
 	static const t_coef coef[] = {10,22,31,31,22,10};
-	// ...
+
 
 	t_in  d_in;
 	t_acc d_out;
 
-	// ...
+	d_in = in.read();
+	
+	t_filter instantiated_filter;
+	filter.process(d_in,coef, &d_out);
+    out.write(d_out);
+}
 
 /*
-	for(j = 0;j < size+size_filter;j++)
-{
-  output[j] = 0;
-  for(i = 0;i < size_filter;i++)
-  {         
-
-    output[j] += buffer[i]*filter[j-i];
-  }
-}
-*/
-}
-
-
 
 void filter_std(hls::stream<sp_filter_std::t_in> & in, hls::stream<sp_filter_std::t_acc> & out)
 {
 	t_in signal_in;
 	t
 }
+*/

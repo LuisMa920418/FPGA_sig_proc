@@ -1,0 +1,46 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'elite' on host 'elite-HP-EliteBook-850-G2' (Linux_x86_64 version 4.15.0-29-generic) on Tue Dec 15 12:12:40 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work'
+Sourcing Tcl script '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/script/filter_std.tcl'
+INFO: [HLS 200-10] Opening project '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work/filter_std'.
+INFO: [HLS 200-10] Adding design file '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/filter/filter_std.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/filter/tb_std.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work/filter_std/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010-clg400-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make[1]: Entering directory '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work/filter_std/solution1/csim/build'
+   Compiling ../../../../../design/filter/tb_std.cpp in debug mode
+csim.mk:75: recipe for target 'obj/tb_std.o' failed
+make[1]: Leaving directory '/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work/filter_std/solution1/csim/build'
+In file included from /tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/c++config.h:495:0,
+                 from /tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/cstdlib:41,
+                 from /home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include/hls.h:31,
+                 from ../../../../../design/filter/tb_std.cpp:18:
+/tools/Xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/include/c++/6.2.0/x86_64-pc-linux-gnu/bits/os_defines.h:39:22: fatal error: features.h: No such file or directory
+ #include <features.h>
+                      ^
+compilation terminated.
+make[1]: *** [obj/tb_std.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+4
+    while executing
+"source $::env(dir_script)/cmd.tcl"
+    (file "/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/script/filter_std.tcl" line 15)
+    invoked from within
+"source /home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/script/filter_std.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [Common 17-206] Exiting vivado_hls at Tue Dec 15 12:12:42 2020...

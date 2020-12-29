@@ -35,6 +35,13 @@ enum filter_mode {
 template<filter_mode mode, typename t_data, typename t_coef, typename t_acc, int size>
 class c_filter {
 
+	//when the filter is symetric what's the format of the coeficients in the vector coef?
+	//for a filter symetric having coeficients 1 2 3 2 1 
+	//Option 1  coef = 1 2 3 2 1 , thus size = 5
+	//Option 2  coef =  1 2 3 , thus size 3
+	//Option 3  coef = 1 2 3 size = 5
+
+
 	static const int size_div2 = size/2; // Number of taps divided by 2
 
 	t_data reg[size];                    // TAPS
@@ -50,7 +57,9 @@ class c_filter {
 
 	void reset() {
 		acc = 0;  //clear accumulator
-		reg[] = 0; //clear internal registers
+		for(int i=0;i<size;i++) {
+		reg[i] = 0; //clear internal registers
+		}
 	}
 
 	c_filter() {
@@ -82,7 +91,11 @@ class c_filter {
 	// ------------------------------------------------
 
 	void shift(t_data in) {
-		reg.write(in.read());
+		
+		for(int i=size-1;i>0;i--) {
+		reg[i] = reg[i-1]; //clear internal registers
+		}
+		reg[0] = in;
 	}
 
 	// ------------------------------------------------
@@ -93,7 +106,17 @@ class c_filter {
 	// ------------------------------------------------
 
 	void mac_sym(const t_coef *coef) {
-		// ...
+		//size_div2
+	  for (int i = 0; i <size_div2 ; i++)
+		 {
+		   mult_add(reg[size-1-i]+reg[i], coef[i], acc);
+		 }
+     if (size%2==1)
+	 { 
+		 //for odd sizes  another adittion is missing i the previous for loop
+		 mult_add(reg[size_div2], coef[size_div2], acc);
+	 }
+	 
 	}
 
 	// ------------------------------------------------
@@ -104,7 +127,13 @@ class c_filter {
 	// ------------------------------------------------
 
 	void mac(const t_coef *coef) {
-		// ...
+
+         for (int i = 0; i size-1 ; i++)
+		 {
+            
+			 mult_add(reg[i], coef[i], c);
+		 }
+
 	}
 
 	// ------------------------------------------------
