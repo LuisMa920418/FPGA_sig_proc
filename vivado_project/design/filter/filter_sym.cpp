@@ -24,12 +24,23 @@ void filter_sym(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
 #pragma HLS INLINE
 	// For synthesis : Add pipeline pragma (II=1)
 
+
+// same steps as in the case standard filter, the filter template is filled up as symetrical in the file "filter_sym.h"
+
+t_filter instantiated_filter;  //instantiation of the filter
+
 	static const t_coef coef[] = {10,22,31};
-	// ...
+
 
 	t_in  d_in;
 	t_acc d_out;
 
-	// ...
+	  //get the input to the filter
+	d_in = in.read();
+	//executes the main process of the filter
+	instantiated_filter.process(d_in,coef, &d_out);
+	//outputs the result of the filtering
+    out.write(d_out);
+
 }
 
