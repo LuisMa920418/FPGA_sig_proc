@@ -62,6 +62,7 @@ class c_filter {
 		}
 	}
 
+//contructor of the class c_filter
 	c_filter() {
 		
 		reset();

@@ -46,13 +46,3 @@ void filter_std(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
 	//outputs the result of the filtering
     out.write(d_out);
 }
-
-/*
-
-void filter_std(hls::stream<sp_filter_std::t_in> & in, hls::stream<sp_filter_std::t_acc> & out)
-{
-	t_in signal_in;
-	t
-}
-template<filter_mode mode, typename t_data, typename t_coef, typename t_acc, int size>
-*/
