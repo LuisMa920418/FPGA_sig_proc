@@ -31,15 +31,19 @@ void filter_std(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
 	// Doc (internet) : Vivado HLS User Guide (UG902)
 
 	static const t_coef coef[] = {10,22,31,31,22,10};
+    
 
+	t_filter instantiated_filter;  //instantiation of the filter
 
-	t_in  d_in;
+   //initialize the variables for filter main process 
+	t_in  d_in;  
 	t_acc d_out;
 
+    //get the input to the filter
 	d_in = in.read();
-	
-	t_filter instantiated_filter;
-	filter.process(d_in,coef, &d_out);
+	//executes the main process of the filter
+	instantiated_filter.process(d_in,coef, &d_out);
+	//outputs the result of the filtering
     out.write(d_out);
 }
 
@@ -50,4 +54,5 @@ void filter_std(hls::stream<sp_filter_std::t_in> & in, hls::stream<sp_filter_std
 	t_in signal_in;
 	t
 }
+template<filter_mode mode, typename t_data, typename t_coef, typename t_acc, int size>
 */
