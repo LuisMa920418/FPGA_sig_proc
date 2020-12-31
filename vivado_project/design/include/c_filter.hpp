@@ -82,7 +82,7 @@ class c_filter {
 		} else {
 			mac(coef);
 		}
-		
+		out = acc; //assigning out here or inisde  #tocheck
 	}
 
 	private :
@@ -108,13 +108,13 @@ class c_filter {
 
 	void mac_sym(const t_coef *coef) {
 		//size_div2
-	  for (int i = 0; i <size_div2 ; i++)
+	  for (int i = 0; i <size_div2-1 ; i++)
 		 {
 		   mult_add(reg[size-1-i]+reg[i], coef[i], acc);
 		 }
+		  //for odd sizes  another adition is missing i the previous for loop
      if (size%2==1)
-	 { 
-		 //for odd sizes  another adittion is missing i the previous for loop
+	 { 		
 		 mult_add(reg[size_div2], coef[size_div2], acc);
 	 }
 	 
@@ -131,8 +131,7 @@ class c_filter {
 
          for (int i = 0; i size-1 ; i++)
 		 {
-            
-			 mult_add(reg[i], coef[i], c);
+            mult_add(reg[i], coef[i], acc);
 		 }
 
 	}
