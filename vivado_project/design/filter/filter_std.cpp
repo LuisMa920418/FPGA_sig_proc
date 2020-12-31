@@ -35,6 +35,9 @@ void filter_std(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
 
 	t_filter instantiated_filter;  //instantiation of the filter
 
+	//should iit be reset?? **************, just the first time and .. #todo
+
+
    //initialize the variables for filter main process 
 	t_in  d_in;  
 	t_acc d_out;
@@ -42,7 +45,7 @@ void filter_std(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
     //get the input to the filter
 	d_in = in.read();
 	//executes the main process of the filter
-	instantiated_filter.process(d_in,coef, &d_out);
+	instantiated_filter.process(d_in,&coef, &d_out);
 	//outputs the result of the filtering
     out.write(d_out);
 }
