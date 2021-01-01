@@ -42,8 +42,13 @@ void filter_std(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
 	t_filter instantiated_filter;  //instantiation of the standard filter that is in  filter
     
     //executes the main process of the filter 
+<<<<<<< HEAD
     instantiated_filter.process(d_in,&coef, d_out);
 
+=======
+
+    instantiated_filter.process(d_in,&coef, d_out);
+>>>>>>> Bob2
 	//outputs the result of the filtering
     out.write(d_out);
 	//set the return port of this function to be the d_out as the result of the filtering

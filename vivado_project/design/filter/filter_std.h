@@ -31,6 +31,7 @@ namespace sp_filter_std {
 
 };
 //test
+//Rob's comment, really helpful stuff..
 void filter_std(hls::stream<sp_filter_std::t_in> & in, hls::stream<sp_filter_std::t_acc> & out);
 
 #endif
