@@ -67,7 +67,11 @@ class c_polyphase {
 		// Variable : "d_acc_poly" is the polyphase accumulator
 		// ------------------------------------------------------
 
-		rnd<shift>(d_acc_poly.real,d_out.real);
+
+	 //shift right "shift" times(divission by 2^"shift"), d_acc_poly and store the return int value in d_out
+	 //sum(abs(filter_coefficients))=1286;
+	 //is this shifting the unity gain filter(fir filter with integer values) conversion?? yes, not why?
+		rnd<shift>(d_acc_poly.real,d_out.real); 
 		rnd<shift>(d_acc_poly.imag,d_out.imag);
 
 		// --------------
