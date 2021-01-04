@@ -61,6 +61,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
+<<<<<<< HEAD
+=======
+                                    <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work"/>
+                                    									
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                     <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include"/>
                                     								
                                 </option>
@@ -97,6 +102,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
+<<<<<<< HEAD
+=======
+                                    <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work"/>
+                                    									
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                     <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include"/>
                                     								
                                 </option>
@@ -165,9 +175,15 @@
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.715743911.2068937068" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.715743911">
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.preprocessor.def.1613595066" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.463323592" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+=======
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1613595066" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.463323592" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                 								
                                 <listOptionValue builtIn="false" value="../../../design/include"/>
                                 								
@@ -187,9 +203,13 @@
                                 							
                             </option>
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.other.other.788473900" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1429818025" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+=======
+                            <option id="gnu.cpp.compiler.option.other.other.788473900" superClass="gnu.cpp.compiler.option.other.other"/>
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                             						
                         </tool>
                         					
@@ -199,9 +219,15 @@
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.715743911.910872283" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.715743911">
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.preprocessor.def.1410241926" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.387178120" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+=======
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.1410241926" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.387178120" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                 								
                                 <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include"/>
                                 								
@@ -219,9 +245,13 @@
                                 							
                             </option>
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.other.other.294692605" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.478761921" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+=======
+                            <option id="gnu.cpp.compiler.option.other.other.294692605" superClass="gnu.cpp.compiler.option.other.other"/>
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                             						
                         </tool>
                         					
@@ -299,6 +329,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
+<<<<<<< HEAD
+=======
+                                    <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work"/>
+                                    									
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                     <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include"/>
                                     								
                                 </option>
@@ -325,6 +360,11 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vitis_HLS/2020.2/include/etc"/>
                                     									
+<<<<<<< HEAD
+=======
+                                    <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/work"/>
+                                    									
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                     <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include"/>
                                     								
                                 </option>
@@ -383,9 +423,15 @@
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.812460795.652036737" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.812460795">
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.preprocessor.def.2002259905" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1586330563" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+=======
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.2002259905" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1586330563" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                 								
                                 <listOptionValue builtIn="false" value="../../../design/include"/>
                                 								
@@ -405,9 +451,13 @@
                                 							
                             </option>
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.other.other.735484337" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.555555161" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+=======
+                            <option id="gnu.cpp.compiler.option.other.other.735484337" superClass="gnu.cpp.compiler.option.other.other"/>
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                             						
                         </tool>
                         					
@@ -417,9 +467,15 @@
                         						
                         <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.812460795.84312649" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.812460795">
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.preprocessor.def.2026786576" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
                             							
                             <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1639209766" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+=======
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.2026786576" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1639209766" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                                 								
                                 <listOptionValue builtIn="false" value="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include"/>
                                 								
@@ -437,9 +493,13 @@
                                 							
                             </option>
                             							
+<<<<<<< HEAD
                             <option id="gnu.cpp.compiler.option.other.other.2113368505" name="Other flags" superClass="gnu.cpp.compiler.option.other.other"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1687744018" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+=======
+                            <option id="gnu.cpp.compiler.option.other.other.2113368505" superClass="gnu.cpp.compiler.option.other.other"/>
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
                             						
                         </tool>
                         					

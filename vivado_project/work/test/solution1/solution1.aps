@@ -10,7 +10,10 @@
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/Kintex-7/Kintex-7</Platform>
             <Platform>xilinx/Kintex-7/Kintex-7_fpv7</Platform>
+<<<<<<< HEAD
             <Platform>xilinx/kintex7/kintex7</Platform>
+=======
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -45,7 +48,10 @@
         <Format formatName="sysgen_ise"/>
         <Format formatName="syn_dcp"/>
         <Format formatName="pcore" use_netlist="none"/>
+<<<<<<< HEAD
         <Format formatName="xo"/>
+=======
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
     </ExportDesign>
     <Simulation>
         <SimFlow askAgain="true" clangSanitizer="false" compile="false" compileChoice="gcc" disableDeadlockDetect="false" dumpTrace="none" enableDataflowProfiling="false" enableFifoSizing="false" name="cosim" optimizeCompile="false" random_stall="false" reduce_diskspace="false" setup="false" toolName="Auto" waveDebug="false">
@@ -67,11 +73,18 @@
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/Kintex-7/Kintex-7"/>
         <library name="DefaultPlatform" value="xilinx/Kintex-7/Kintex-7_fpv7"/>
+<<<<<<< HEAD
         <library name="DefaultPlatform" value="xilinx/kintex7/kintex7"/>
         <library value="xilinx/kintex7/kintex7" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
         <clock name="default" default="false" period="10"/>
+=======
+        <library value="xilinx/kintex7/kintex7" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+>>>>>>> f13f5031d3373360b6aeb22010e03d7e33c3da2f
     </clockList>
 </solution>
 

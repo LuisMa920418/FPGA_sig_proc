@@ -39,10 +39,10 @@ void filter_std(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
     //get the input to the filter
 	d_in = in.read();
 
-	t_filter instantiated_filter;  //instantiation of the standard filter that is in  filter
+	static t_filter instantiated_filter;  //instantiation of the standard filter that is in  filter
     
     //executes the main process of the filter 
-    instantiated_filter.process(d_in,&coef, d_out);
+    instantiated_filter.process(d_in,coef, d_out);
 
 	//outputs the result of the filtering
     out.write(d_out);
