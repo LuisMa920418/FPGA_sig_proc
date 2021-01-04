@@ -33,22 +33,22 @@ template<int size, typename t_data, typename t_coef, typename t_acc, int shift, 
 class c_polyphase {
 
 	enum {
-		nb_branch   = 2,  // #toask what is this parameter for? how is it used? is it for controlling the decimator factor?
+		nb_branch   = 2,  // #toask is thuis the decimation factor? 
 		size_filter = size/nb_branch
 	};
    
 
 	
 
-		// nb_branch = 2 : 2 Symmetric filters  having coef from coef1 and coef2
-		c_filter<symmetric,t_data,t_coef,t_acc,size_filter> instance_filter_sym_branch1,instance_filter_sym_branch2;//instance for symetric filter
+		// nb_branch = 1 : 2 Symmetric filters  having coef from coef1 and coef2
+		c_filter<symmetric,t_data,t_coef,t_acc,size_filter> instance_filter_sym_branch1;//instance for symetric filter
 
-		 // nb_branch =  1 : Standard filter  // #toask is the standard filter going to be used???
+		 // nb_branch =  2 : Standard filter  // #toask is the standard filter going to be used???
     c_filter<standard,t_data,t_coef,t_acc,size_filter> instance_filter_std;    //instance for std filter
 	
    
 	t_acc d_acc_poly;
-	int   cpt;
+	int   cpt; //compteur
 
 	public:
 
@@ -72,10 +72,7 @@ class c_polyphase {
 		
 		d_in = in.read();
         
-		switch (nb_branch)
-		{
-			case 2:
-		    //case polyphase with two branches
+         //case polyphase with two branches
 			if (cpt==0)
 			{
 				instance_filter_sym_branch1.process(d_in,coef_1, d_acc_filter);
@@ -98,25 +95,13 @@ class c_polyphase {
 				d_acc_filter.real = a.real<<shift_times;
 				d_acc_filter.imag = a.imag<<shift_times;
 */
-				instance_filter_sym_branch2.process(d_in,coef_2,d_acc_filter);
+				instance_filter_std.process(d_in,coef_2,d_acc_filter);
 			}
 			d_acc_poly +=d_acc_filter;
-			break;
-		
-		default:
-		    //otherwise case nb_branch=1 for standard filter
-			//#toask coefficients parameters to use in case std_filter is used
-	        //create std filter coef from sym coef ? is that necessary for this project?
-		    t_coef coef_std;  //answer to know???
 
-			instance_filter_std.process(d_in,coef_std, d_acc_filter);
-			if (cpt==0)
-			{
-				d_acc_poly = d_acc_filter;
-			}
-		
-			break;
-		}
+
+
+	
 		
         
 		
