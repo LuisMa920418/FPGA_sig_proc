@@ -75,14 +75,14 @@ class c_filter {
 
 	void process(t_data in, const t_coef *coef, t_acc & out) {
 
-		
+		acc = 0;
 		shift(in);
 		if(mode == symmetric) {
 			mac_sym(coef);
 		} else {
 			mac(coef);
 		}
-		out = acc; //assigning out here or inisde  #tocheck
+		out = acc; //assigning out here or inside  #to check
 	}
 
 	private :
@@ -112,7 +112,7 @@ class c_filter {
 		 {
 		   mult_add(reg[size-1-i]+reg[i], coef[i], acc);
 		 }
-		  //for odd sizes  another adition is missing i the previous for loop
+		  //for odd sizes  another addition is missing i the previous for loop
      if (size%2==1)
 	 { 		
 		 mult_add(reg[size_div2], coef[size_div2], acc);
@@ -129,7 +129,7 @@ class c_filter {
 
 	void mac(const t_coef *coef) {
 
-         for (int i = 0; i size-1 ; i++)
+         for (int i = 0; i < size ; i++)
 		 {
             mult_add(reg[i], coef[i], acc);
 		 }
