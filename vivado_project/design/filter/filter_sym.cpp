@@ -38,7 +38,7 @@ t_filter instantiated_filter;  //instantiation of the filter
 	  //get the input to the filter
 	d_in = in.read();
 	//executes the main process of the filter
-	instantiated_filter.process(d_in,&coef, &d_out);
+	instantiated_filter.process(d_in,&coef, d_out);
 	//outputs the result of the filtering
     out.write(d_out);
 
