@@ -1,24 +1,24 @@
 <AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
-    <config>
-        <config_rtl encoding="onehot" kernel_profile="0" module_auto_prefix="0" mult_keep_attribute="0" reset="all" reset_async="0" reset_level="high" verbose="0"/>
-        <config_schedule effort="medium" enable_dsp_full_reg="0" relax_ii_for_timing="0" verbose="0"/>
-        <config_export vivado_optimization_level="2"/>
-    </config>
     <name>
         <value string="solution1"/>
     </name>
     <project>
         <value string="filter_std"/>
     </project>
+    <flowTarget value="vivado"/>
     <targetInfo>
         <TargetInfo value="xc7z010:-clg400:-1"/>
     </targetInfo>
     <libraryList>
         <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
-        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock name="default" default="false" period="20"/>
+        <clock name="default" period="20" default="false"/>
     </clockList>
+    <config>
+        <config_rtl encoding="onehot" kernel_profile="0" module_auto_prefix="0" mult_keep_attribute="0" reset="all" reset_async="0" reset_level="high"/>
+        <config_schedule effort="medium" enable_dsp_full_reg="0" relax_ii_for_timing="0"/>
+        <config_export vivado_optimization_level="2" vivado_phys_opt="place"/>
+    </config>
 </AutoPilot:solution>
 

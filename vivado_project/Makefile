@@ -1,7 +1,7 @@
 check_defined = $(if $(firstword $(strip $(1))),,$(error Undefined parameter => cmd "make help" for details))
 
-VIVADO_HLS_EXE := vivado_hls
-#VIVADO_HLS_EXE := vitis_hls
+#VIVADO_HLS_EXE := vivado_hls
+VIVADO_HLS_EXE := vitis_hls
 
 export dir_project     := $(shell pwd)
 export dir_src         := $(dir_project)/design
