@@ -1,11 +1,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-log
+5 january 16:27 To do next:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-5 january 16:27 Next:
+
 ________________________________________________________________________________________________
 Task: test the testbench for reverse ingeniering
 test tb_std, 
@@ -40,3 +40,14 @@ ________________________________________________________________________________
 Task: testbecnh poly_1
 1 create the testbench function file tb_poly_1.cpp
 2 run and compare with reference in file reference.h
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+5 january 22:32 To do next:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+- tb to poly_2 and poly_3(reference and tb)
+
+-FFT 
+
+-RTL Synthesis of all 
