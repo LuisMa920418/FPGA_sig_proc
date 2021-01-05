@@ -40,16 +40,14 @@ void poly_1(hls::stream<t_in> & in, hls::stream<t_out> & out) {
 	coef = firpm(10, f,amp);
 	  or 
 	coef = remez(10,f,amp);
-	then convert to signed integer 10 bits
+	then convert to signed integer 11 bits
 	coef = round(2^10*coef);
-
-	
 	*/
 	
 
 	t_polyphase instantiated_filter;  //instantiation of the filter
 
 	//executes the main process of the filter
-	instantiated_filter.process(in,&coef_1,&coef_2, out);
+	instantiated_filter.process(in,coef_1,coef_2, out);
 }
 

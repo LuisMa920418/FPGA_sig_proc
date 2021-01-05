@@ -108,7 +108,7 @@ class c_filter {
 
 	void mac_sym(const t_coef *coef) {
 		//size_div2
-	  for (int i = 0; i <size_div2-1 ; i++)
+	  for (int i = 0; i <size_div2 ; i++)
 		 {
 		   mult_add(reg[size-1-i]+reg[i], coef[i], acc);
 		 }
