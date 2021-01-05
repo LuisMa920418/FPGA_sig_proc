@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	}
 
    //filter all the values inside "in" as long as there is data in the FIFO
-   //in.size()=0 means the FIFO is empty
+   //in.size()=0 means the FIFO is empty 
 	while(in.size())  
 	filter_std(in,out);
 
