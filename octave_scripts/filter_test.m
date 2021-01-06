@@ -27,7 +27,11 @@ amp=[1 1 0 0];
 f=[0 0.25 0.75 1];
 
 
+<<<<<<< HEAD
+b_poly = remez(10, f,amp);  %in matlab use function firpm, in octave use function remez
+=======
 b_poly = remez(10, f,amp);  //in matlab use function firpm, in octave use function remez
+>>>>>>> 80fffc13ee6cf7c4ab42225fc763f9677d7f95d2
 b_poly = round(2^10*b_poly');%make it signed 11 bits
 
 out_poly_1_imag=  round(upfirdn (imag_part, b_poly, 1, 2)/2^10);  %filter, downsample by two, divide by 2^10 to set unitary gain and round
