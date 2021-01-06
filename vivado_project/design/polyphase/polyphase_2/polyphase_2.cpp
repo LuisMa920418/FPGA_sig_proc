@@ -30,6 +30,6 @@ void poly_2(hls::stream<t_in> & in, hls::stream<t_out> & out) {
 	t_polyphase instantiated_filter;  //instantiation of the filter
 
 	//executes the main process of the filter
-	instantiated_filter.process(in,&coef_1,&coef_2, out);
+	instantiated_filter.process(in,coef_1,coef_2, out);
 }
 
