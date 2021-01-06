@@ -1,1 +1,1 @@
-/tools/Xilinx/Vivado/2019.1/settings64.sh
+/tools/Xilinx/Vitis_HLS/2020.2/settings64.sh

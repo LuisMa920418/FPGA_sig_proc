@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="filter_std.cpp" path="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/filter/filter_std.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_std.cpp" path="/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/filter/tb_std.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

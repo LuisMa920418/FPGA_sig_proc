@@ -6,6 +6,8 @@ CSIM_DESIGN = 1
 
 __SIM_FPO__ = 1
 
+__HLS_FPO_v6_1__ = 1
+
 __SIM_MATHHLS__ = 1
 
 __SIM_FFT__ = 1
@@ -47,6 +49,8 @@ IFLAG += -D__VITIS_HLS__
 
 IFLAG += -D__SIM_FPO__
 
+IFLAG += -D__HLS_FPO_v6_1__
+
 IFLAG += -D__SIM_FFT__
 
 IFLAG += -D__SIM_FIR__
@@ -54,7 +58,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
-IFLAG += -I/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include -Wno-unknown-pragmas 
+IFLAG += -I../../../design/include -Wno-unknown-pragmas -I/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include 
 IFLAG += -g
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += -Werror=return-type
@@ -70,7 +74,7 @@ all: $(TARGET)
 
 $(ObjDir)/tb_std.o: ../../../../../design/filter/tb_std.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../../design/filter/tb_std.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I/home/elite/Downloads/Signal_proc_FPGA/TP1/vivado_project/vivado_project/vivado_project/design/include -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -I../../../../../design/include -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/tb_std.d
 

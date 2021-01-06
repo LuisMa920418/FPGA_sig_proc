@@ -26,8 +26,10 @@ void filter_sym(hls::stream<t_in> & in, hls::stream<t_acc> & out) {
 
 
 // same steps as in the case standard filter
-
-t_filter instantiated_filter;  //instantiation of the filter
+//make the filter static so it is not overwritten everytime the filter is instatntiated,
+	//so the cintructor function will not be executed and the internal register of this filter
+	//wont be cleared out
+static t_filter instantiated_filter;  //instantiation of the filter
 
 	static const t_coef coef[] = {10,22,31};
 
@@ -38,7 +40,7 @@ t_filter instantiated_filter;  //instantiation of the filter
 	  //get the input to the filter
 	d_in = in.read();
 	//executes the main process of the filter
-	instantiated_filter.process(d_in,&coef, d_out);
+	instantiated_filter.process(d_in,coef, d_out);
 	//outputs the result of the filtering
     out.write(d_out);
 

@@ -25,8 +25,9 @@
 // ------------------------------------
 // !! Vivado BUG !! (Adapt the path)
 // ------------------------------------
+#include "/tools/Xilinx/Vivado/2020.2/include/gmp.h"  
 // #include "/tools/Xilinx/Vivado/2019.1/include/gmp.h"
-//#include "/home/accesscore/soft/xilinx/Vitis_HLS/2020.2/include/gmp.h"
+//#include "C:/Xilinx_20s19/Vivado/2019.1/include/gmp.h"
 // ------------------------------------
 #include  <cstdlib>
 #include  <fstream>
