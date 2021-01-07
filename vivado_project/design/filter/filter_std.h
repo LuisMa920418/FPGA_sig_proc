@@ -30,7 +30,13 @@ namespace sp_filter_std {
   typedef c_filter<standard,t_in,t_coef,t_acc,filter_size> t_filter;
 
 };
+<<<<<<< HEAD
+//test
+//Rob's comment, really helpful stuff..
+//haha I can make changes
+=======
 
+>>>>>>> b7a8e1ebd4dd4bf5f61fe8192733b775b8ed2ce9
 void filter_std(hls::stream<sp_filter_std::t_in> & in, hls::stream<sp_filter_std::t_acc> & out);
 
 #endif
