@@ -27,9 +27,9 @@ void poly_2(hls::stream<t_in> & in, hls::stream<t_out> & out) {
 	static const t_coef coef_1[] = {13, -65, 309};
 	static const t_coef coef_2[] = {0,  0,   0, 512, 0, 0};
 
-	t_polyphase instantiated_filter;  //instantiation of the filter
+	static t_polyphase instantiated_filter;  //instantiation of the filter
 
 	//executes the main process of the filter
-	instantiated_filter.process(in,&coef_1,&coef_2, out);
+	instantiated_filter.process(in,coef_1,coef_2, out);
 }
 

@@ -58,6 +58,7 @@ class c_filter {
 	void reset() {
 		acc = 0;  //clear accumulator
 		for(int i=0;i<size;i++) {
+#pragma HLS UNROLL
 		reg[i] = 0; //clear internal registers
 		}
 	}
@@ -94,6 +95,7 @@ class c_filter {
 	void shift(t_data in) {
 		
 		for(int i=size-1;i>0;i--) {
+			
 		reg[i] = reg[i-1]; //clear internal registers
 		}
 		reg[0] = in;
